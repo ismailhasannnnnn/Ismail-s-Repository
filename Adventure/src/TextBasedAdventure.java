@@ -4,13 +4,15 @@ public class TextBasedAdventure {
 	
 	public static Scanner in = new Scanner(System.in);
 	public static String name;
+	public static int gender;
+	public static String narration1;
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 		intro();
 	}
 	
-	public static void intro() {
+	public static void intro() throws InterruptedException { // would be start menu of gui
 		System.out.println("Hi.");
 		Timer.oneSecond();
 		System.out.println("This is your adventure.");
@@ -19,16 +21,18 @@ public class TextBasedAdventure {
 		genderChoice();
 	}
 	
-	public static void genderChoice() {
+	public static void genderChoice() throws InterruptedException { // gender is chosen. part of intro in gui
 		switch(in.next()) {
 		
 		case "male":
 			System.out.println("I see, you are male.");
+			gender = 1;
 			nameChoice();
 			break;
 			
 		case "female":
 			System.out.println("I see, you are female.");
+			gender = 2;
 			nameChoice();
 			break;
 		
@@ -40,7 +44,7 @@ public class TextBasedAdventure {
 		}
 	}
 	
-	public static void nameChoice() {
+	public static void nameChoice() throws InterruptedException {
 		
 		System.out.println("Alright, what's your name? Hopefully it fits your gender.");
 		name = in.next();
@@ -49,9 +53,33 @@ public class TextBasedAdventure {
 		
 	}
 	
-	public static void start() {
+	public static void start() throws InterruptedException {
 		
-		System.out.println("Okay, " + name + ", this is where your adventure begins!");
+		System.out.println("Okay, " + name + ", what're you up to right now?");
+		in.nextLine();
+		System.out.println("Oh really! That seems really interesting.");
+		Timer.oneSecond();
+		System.out.println("We should really get going, it's gonna get dark soon, " + name + ".");
+		
+		
+		if(gender == 1) {
+		 narration1 = "From then on, nobody knew just how incredibly gifted " + name + " was. "  // two lines, same string
+		 + System.lineSeparator() + "Little did he know, but something big was about to hit America.";
+		}
+		
+		if(gender == 2) {
+			narration1 = "From then on, nobody knew just how incredibly gifted " + name + " was. "  // two lines, same string
+			+ System.lineSeparator() + "Little did she know, but something big was about to hit America.";
+		}
+		
+		
+		Timer.oneSecond();
+		for(int i = 0; i < narration1.length(); i++ ) {
+			char c = narration1.charAt(i);
+			System.out.print(c);
+			Thread.sleep(100);
+		
+		}
 		
 	}
 
