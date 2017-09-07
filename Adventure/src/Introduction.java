@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class TextBasedAdventure {
+public class Introduction {
 	
 	public static Scanner in = new Scanner(System.in);
 	public static String name;
@@ -46,9 +46,11 @@ public class TextBasedAdventure {
 	
 	public static void nameChoice() throws InterruptedException {
 		
+		Timer.oneSecond();
 		System.out.println("Alright, what's your name? Hopefully it fits your gender.");
 		name = in.next();
 		System.out.println("I see! Your name is " + name +", how fitting!");
+		Timer.oneSecond();
 		start();
 		
 	}
@@ -56,7 +58,7 @@ public class TextBasedAdventure {
 	public static void start() throws InterruptedException {
 		
 		System.out.println("Okay, " + name + ", what're you up to right now?");
-		in.nextLine();
+		in.next();
 		System.out.println("Oh really! That seems really interesting.");
 		Timer.oneSecond();
 		System.out.println("We should really get going, it's gonna get dark soon, " + name + ".");
@@ -64,12 +66,12 @@ public class TextBasedAdventure {
 		
 		if(gender == 1) {
 		 narration1 = "From then on, nobody knew just how incredibly gifted " + name + " was. "  // two lines, same string
-		 + System.lineSeparator() + "Little did he know, but something big was about to hit America.";
+		 + System.lineSeparator() + "Little did he know, but something big was about to hit America, and his life would be changed forever.";
 		}
 		
 		if(gender == 2) {
 			narration1 = "From then on, nobody knew just how incredibly gifted " + name + " was. "  // two lines, same string
-			+ System.lineSeparator() + "Little did she know, but something big was about to hit America.";
+			+ System.lineSeparator() + "Little did she know, but something big was about to hit America, and her life would be changed forever.";
 		}
 		
 		
@@ -80,6 +82,8 @@ public class TextBasedAdventure {
 			Thread.sleep(100);
 		
 		}
+		
+		//calling method from another class placeholder
 		
 	}
 
