@@ -6,13 +6,18 @@ public class Introduction {
 	public static String name;
 	public static int gender;
 	public static String narration1;
+	public static String narration2;
 	
 	public static void main(String[] args) throws InterruptedException {
 		
-		intro();
+		TyperIntro.intro();
+		System.out.println();
+		TyperIntro.question();
+		System.out.println();
+		Introduction.genderChoice();
 	}
 	
-	public static void intro() throws InterruptedException { // would be start menu of gui
+	public static void intro()    { // would be start menu of gui
 		System.out.println("Hi.");
 		Timer.oneSecond();
 		System.out.println("This is your adventure.");
@@ -21,70 +26,79 @@ public class Introduction {
 		genderChoice();
 	}
 	
-	public static void genderChoice() throws InterruptedException { // gender is chosen. part of intro in gui
+	public static void genderChoice() { // gender is chosen. part of intro in gui
 		switch(in.next()) {
 		
 		case "male":
-			System.out.println("I see, you are male.");
+			TyperIntro.selectMale();
+			System.out.println(); 		// here because without it, it just prints nameChoice on same line
 			gender = 1;
 			nameChoice();
 			break;
 			
 		case "female":
-			System.out.println("I see, you are female.");
+			TyperIntro.selectFemale();
+			System.out.println();
 			gender = 2;
 			nameChoice();
 			break;
+
 		
 		default:
-			System.out.println("That's not a gender. Please try again.");
-			genderChoice();
-			break;
+//			TyperIntro.genderFail();			//  keeps looping till it detects male or female. ex. "i am a male". 
+//			System.out.println();				// doesn't tell you whats wrong when u put something random though
+			genderChoice();	
+//			break;
+			}
+			
+	}
+			
+	public static void nameChoice()  {
 		
-		}
+		Timer.oneSecond();
+		TyperIntro.askName();
+		System.out.println();
+		in.nextLine();
+		name = in.nextLine();
+		TyperIntro.selectName();
+		Timer.oneSecond();
+		System.out.println();
+		end();
+		
 	}
 	
-	public static void nameChoice() throws InterruptedException {
+	public static void end()  {
+		
 		
 		Timer.oneSecond();
-		System.out.println("Alright, what's your name? Hopefully it fits your gender.");
-		name = in.next();
-		System.out.println("I see! Your name is " + name +", how fitting!");
+		TyperIntro.theEnd();
 		Timer.oneSecond();
-		start();
-		
-	}
-	
-	public static void start() throws InterruptedException {
-		
-		System.out.println("Okay, " + name + ", what're you up to right now?");
-		in.next();
-		System.out.println("Oh really! That seems really interesting.");
+		System.out.println();
+		TyperIntro.theEnd2();
 		Timer.oneSecond();
-		System.out.println("We should really get going, it's gonna get dark soon, " + name + ".");
+		System.out.println();
 		
 		
 		if(gender == 1) {
-		 narration1 = "From then on, nobody knew just how incredibly gifted " + name + " was. "  // two lines, same string
-		 + System.lineSeparator() + "Little did he know, but something big was about to hit America, and his life would be changed forever.";
+			TyperIntro.maleEnd();
+			chapterOne.Main();
 		}
 		
 		if(gender == 2) {
-			narration1 = "From then on, nobody knew just how incredibly gifted " + name + " was. "  // two lines, same string
-			+ System.lineSeparator() + "Little did she know, but something big was about to hit America, and her life would be changed forever.";
+			TyperIntro.femaleEnd();
+			chapterOne.Main();
+
 		}
 		
 		
-		Timer.oneSecond();
-		for(int i = 0; i < narration1.length(); i++ ) {
-			char c = narration1.charAt(i);
-			System.out.print(c);
-			Thread.sleep(100);
 		
-		}
+		
+	}
+		
+		
 		
 		//calling method from another class placeholder
 		
-	}
-
 }
+
+

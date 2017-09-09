@@ -13,5 +13,14 @@ public class Timer {
 			e.printStackTrace();
 		}
 	}
+	public static void TyperTime() {
+		try {
+			Thread.sleep(30);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
 
 }
