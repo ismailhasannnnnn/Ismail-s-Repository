@@ -18,12 +18,7 @@ public class Introduction {
 	}
 	
 	public static void intro()    { // would be start menu of gui
-		System.out.println("Hi.");
-		Timer.oneSecond();
-		System.out.println("This is your adventure.");
-		Timer.oneSecond();
-		System.out.println("Are you male or female?");
-		genderChoice();
+		
 	}
 	
 	public static void genderChoice() { // gender is chosen. part of intro in gui

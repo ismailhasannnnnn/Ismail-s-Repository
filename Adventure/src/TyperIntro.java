@@ -6,7 +6,7 @@ public class TyperIntro {
 	}
 	
 		public static void intro() {
-			 dlog= "Hi. This is your adventure." + System.lineSeparator() +  "Let's start with a simple question.";
+			 dlog= "Hi. This is your adventure.                    \nLet's start with a simple question.";
 			for(int i = 0; i < dlog.length(); i++ ) {
 				char c = dlog.charAt(i);
 				System.out.print(c);
@@ -69,7 +69,7 @@ public class TyperIntro {
 		}	
 		}
 		public static void theEnd() {
-			dlog = "Listen, " + Introduction.name + ", It's getting dark. We should probably get going.";
+			dlog = "Listen, " + Introduction.name + ", it's getting dark. We should probably get going.";
 			for(int i = 0; i < dlog.length(); i++ ) {
 				char c = dlog.charAt(i);
 				System.out.print(c);

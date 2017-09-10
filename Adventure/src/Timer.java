@@ -7,7 +7,7 @@ public class Timer {
 	
 	public static void oneSecond() {
 		try {
-			Thread.sleep(1000);
+			Thread.sleep(800);			// 1000
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -15,7 +15,7 @@ public class Timer {
 	}
 	public static void TyperTime() {
 		try {
-			Thread.sleep(30);
+			Thread.sleep(30);			// 30
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
