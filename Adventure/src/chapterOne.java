@@ -1,6 +1,7 @@
 
 public class chapterOne {				//replaced story.java
 	
+	public static int energy;
 	public static int sleepiness = 8;
 	public chapterOne() {
 	}
@@ -9,7 +10,8 @@ public class chapterOne {				//replaced story.java
 		
 		Timer.oneSecond();
 		System.out.println();
-		System.out.println(" \n\n\nPART ONE: HOME SWEET HOME \n");
+		System.out.println("\n\nPART ONE: HOME SWEET HOME \n");
+		Timer.oneSecond();
 		wakeup();
 		
 		
@@ -43,7 +45,6 @@ public class chapterOne {				//replaced story.java
 			break;
 			
 		case "2":
-			Timer.oneSecond();
 			System.out.println("You go downstairs");
 			Timer.oneSecond();
 			decision2();
@@ -67,15 +68,54 @@ public class chapterOne {				//replaced story.java
 		
 		if(Introduction.gender == 1 && sleepiness == 8) {
 			TyperOne.Mom1Male();
+			decision3();
 			
 		}
 		if(Introduction.gender == 2 && sleepiness == 8) {
 			TyperOne.Mom1Female();
+			decision3();
 		}
 		if(sleepiness > 8) {
 			TyperOne.Dad1();
+			decision3();
 		}
 	}
+	public static void decision3() {
+		System.out.println("\n\n(1) Eat some breakfast \n(2) Skip breakfast and leave. You're late for school.");
 		
-}
+		
+		switch(Introduction.in.nextLine()) {
+		
+		case "1":
+			energy = 3;
+			System.out.println();
+			decision4();
+			break;
+			
+		
+		case "2":
+			energy = 0;
+			TyperOne.MomDad1();
+			System.out.println();
+			decision4();
+			break;
+		
+		default:
+			decision3();
+			
+			
+		}
+	}
+	public static void decision4() {
+		
+		if(energy == 0) {
+			System.out.println("\nYou walk to school slowly, feeling more empty then ever. You regret skipping breakfast.");
+		}
+		if(energy == 3) {
+			System.out.println("You hurry to school.");
+		}
+		}
+		
+	}
+
 	
