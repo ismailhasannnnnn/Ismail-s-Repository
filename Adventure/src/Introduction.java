@@ -65,7 +65,7 @@ public class Introduction {
 	public static void end()  {
 		
 		
-		Timer.oneSecond();
+		
 		TyperIntro.theEnd();
 		Timer.oneSecond();
 		System.out.println();

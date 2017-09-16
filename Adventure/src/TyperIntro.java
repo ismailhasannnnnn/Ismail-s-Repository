@@ -77,7 +77,7 @@ public class TyperIntro {
 		}
 		}
 		public static void theEnd2() {
-			dlog = "From then on, nobody knew how incredibly gifted " + Introduction.name + " was.";
+			dlog = "\nFrom then on, nobody knew how incredibly gifted " + Introduction.name + " was.";
 			for(int i = 0; i < dlog.length(); i++ ) {
 				char c = dlog.charAt(i);
 				System.out.print(c);
