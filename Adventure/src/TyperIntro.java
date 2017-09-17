@@ -101,11 +101,32 @@ public class TyperIntro {
 				Timer.TyperTime();
 			}
 			}
+		public static void bestFriendGirl() {
+			dlog = "Now what about your best friend. What's her name?\n"; 
+			for(int i = 0; i < dlog.length(); i++ ) {
+				char c = dlog.charAt(i);
+				System.out.print(c);
+				Timer.TyperTime();
+			}
+		}
+			public static void bestFriendBoy() {
+				dlog = "Now what about your best friend. What's his name?\n"; 
+				for(int i = 0; i < dlog.length(); i++ ) {
+					char c = dlog.charAt(i);
+					System.out.print(c);
+					Timer.TyperTime();
 }
-		
-		
+}
+			public static void selectFriendName() {
+				dlog = Introduction.bestFriendName + "? A very beautiful name, indeed.";
+				for(int i = 0; i < dlog.length(); i++ ) {
+					char c = dlog.charAt(i);
+					System.out.print(c);
+					Timer.TyperTime();
 	
-	
-
+		}
+		
+			}
+}
 
 

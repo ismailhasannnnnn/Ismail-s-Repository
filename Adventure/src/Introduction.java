@@ -7,15 +7,19 @@ public class Introduction {
 	public static int gender;
 	public static String narration1;
 	public static String narration2;
+	public static String bestFriendName;
+	public static int bestFriendGender;  // 1 - boy   2 - girl
+	
 	
 	public static void main(String[] args) throws InterruptedException {
-		
+
 		TyperIntro.intro();
 		System.out.println();
 		TyperIntro.question();
 		System.out.println();
 		Introduction.genderChoice();
-	}
+		}
+	
 	
 	public static void intro()    { // would be start menu of gui
 		
@@ -56,6 +60,21 @@ public class Introduction {
 		in.nextLine();
 		name = in.nextLine();
 		TyperIntro.selectName();
+		Timer.oneSecond();
+		System.out.println();
+		
+		if (gender == 1){
+			bestFriendGender = 2;
+			TyperIntro.bestFriendGirl();
+			
+		}
+		if (gender == 2) {
+			bestFriendGender = 1;
+			TyperIntro.bestFriendBoy();
+		}
+		
+		bestFriendName = in.nextLine();
+		TyperIntro.selectFriendName();
 		Timer.oneSecond();
 		System.out.println();
 		end();

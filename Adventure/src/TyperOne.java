@@ -39,7 +39,7 @@ public class TyperOne {
 			}
 		
 		public static void MomDad1() {
-			dlog = "Mom: You're not gonna eat breakfast?         \nDad: Suit yourself, " +Introduction.name + ".";
+			dlog = "Mom: You're not gonna eat breakfast?         \nDad: C'mon, you're already late for your classes anyway, " +Introduction.name + ".\n";
 			for(int i = 0; i < dlog.length(); i++ ) {
 				char c = dlog.charAt(i);
 				System.out.print(c);
@@ -63,7 +63,7 @@ public class TyperOne {
 			}
 			}
 		public static void Mad() {
-			dlog = "Dad: Let's just say that the North Korea won't get second chance to nuke us. You know, cause they're dead.";
+			dlog = "Dad: Let's just say that North Korea won't get a second chance to nuke us. You know, cause they're gonna be dead.";
 			for(int i = 0; i < dlog.length(); i++ ) {
 				char c = dlog.charAt(i);
 				System.out.print(c);
@@ -71,12 +71,43 @@ public class TyperOne {
 		}
 		}
 		public static void Late() {
-			dlog = "Mom: " +Introduction.name + ", make sure to get home by 4, [Justin: I haven't figured out what the 'special event' is]  ";
+			dlog = "Mom: " +Introduction.name + ", make sure to get home by 6, [Justin: Something the MC looks forward to when he gets home.]          \nDad: Pay attention in History class while you're there!\n";
 			for(int i = 0; i < dlog.length(); i++ ) {
 				char c = dlog.charAt(i);
 				System.out.print(c);
 				Timer.TyperTime();
 		}
-		
+		}
+		public static void bestFriend1() {
+			dlog = "["+Introduction.bestFriendName+"]: Yo. We're chilling at MoonBucks after school yea?\n";
+			for(int i = 0; i < dlog.length(); i++ ) {
+				char c = dlog.charAt(i);
+				System.out.print(c);
+				Timer.TyperTime();
+		}
 }
+		public static void bestFriend2() {
+			dlog = "["+Introduction.bestFriendName+"]: Also, did u hear about North Korea? Wer gonna die loll xD.";
+			for(int i = 0; i < dlog.length(); i++ ) {
+				char c = dlog.charAt(i);
+				System.out.print(c);
+				Timer.TyperTime();
+}
+		}
+		public static void youReply() {
+			dlog = "[Me]: Yeah! I heard the news this morning! But anyways, yeah, I'm down for some coffee after school.";
+			for(int i = 0; i < dlog.length(); i++ ) {
+				char c = dlog.charAt(i);
+				System.out.print(c);
+				Timer.TyperTime();
+}
+		}
+		public static void youReply2() {
+			dlog = "[Me]: Sure. As long as it's boneless coffee. ;)";
+			for(int i = 0; i < dlog.length(); i++ ) {
+				char c = dlog.charAt(i);
+				System.out.print(c);
+				Timer.TyperTime();
+}
+		}
 }
