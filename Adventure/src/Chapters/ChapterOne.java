@@ -32,12 +32,13 @@ public class ChapterOne implements Serializable {				//replaced story.java
 		System.out.println();
 		System.out.println("You wake up, wondering who, or what, that voice belonged to.\n"); 					// non dialogue stuff isn't typer 
 		Timer.oneSecond();
+		System.out.println("What do you do? \n----------------------\n(1) Go back to sleep, you're probably still dreaming \n(2) Go downstairs\n---------------------- ");
 		decision1();
 	}
 		
 	public static void decision1() {
 		
-		System.out.println("What do you do? \n----------------------\n(1) Go back to sleep, you're probably still dreaming \n(2) Go downstairs\n---------------------- ");
+		
 		
 		
 		switch(ChapterZero.in.nextLine()) {
