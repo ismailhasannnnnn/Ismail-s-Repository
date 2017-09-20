@@ -1,3 +1,7 @@
+package Typers;
+import Chapters.ChapterOne;
+import Chapters.Introduction;
+import Util.Timer;
 
 public class TyperOne {  				
 	
@@ -30,7 +34,7 @@ public class TyperOne {
 			}
 			}
 		public static void Dad1() {
-			dlog = "Dad: You've slept for more than " +chapterOne.sleepiness + " hours! Lets eat breakfast, or should I say, brunch!";
+			dlog = "Dad: You've slept for more than " +ChapterOne.sleepiness + " hours! Lets eat breakfast, or should I say, brunch!";
 			for(int i = 0; i < dlog.length(); i++ ) {
 				char c = dlog.charAt(i);
 				System.out.print(c);

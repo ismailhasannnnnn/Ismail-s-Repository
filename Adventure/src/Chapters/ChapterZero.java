@@ -1,10 +1,14 @@
+package Chapters;
 import java.util.Scanner;
+
+import Typers.TyperIntro;
+import Util.Timer;
 
 public class Introduction {
 	
 	public static Scanner in = new Scanner(System.in);
 	public static String name;
-	public static int gender;
+	public static int gender;        // 1 - boy   2 - girl
 	public static String narration1;
 	public static String narration2;
 	public static String bestFriendName;
@@ -49,8 +53,10 @@ public class Introduction {
 			genderChoice();	
 //			break;
 			}
+		
 			
 	}
+	
 			
 	public static void nameChoice()  {
 		
@@ -62,18 +68,54 @@ public class Introduction {
 		TyperIntro.selectName();
 		Timer.oneSecond();
 		System.out.println();
+		bestFriendChoice();
 		
-		if (gender == 1){
-			bestFriendGender = 2;
-			TyperIntro.bestFriendGirl();
-			
-		}
-		if (gender == 2) {
+//		if (gender == 1){
+//			bestFriendGender = 2;
+//			TyperIntro.bestFriendGirl();
+//			
+//		}
+//		if (gender == 2) {
+//			bestFriendGender = 1;
+//			TyperIntro.bestFriendBoy();
+//		}
+//		
+//		bestFriendName = in.nextLine();
+//		TyperIntro.selectFriendName();
+//		Timer.oneSecond();
+//		System.out.println();
+//		end();
+		
+	}
+	
+	public static void bestFriendChoice() {
+		
+		TyperIntro.questionTwo();
+		switch(in.next()) {
+		
+		case "male":
+			System.out.println("Interesting, he is male.");
+			Timer.oneSecond();
 			bestFriendGender = 1;
 			TyperIntro.bestFriendBoy();
-		}
+			break;
+			
+		case "female":
+			System.out.println("Interesting, she is female.");
+			Timer.oneSecond();
+			bestFriendGender = 2;
+			TyperIntro.bestFriendGirl();
+			break;
+
 		
-		bestFriendName = in.nextLine();
+		default:
+//			TyperIntro.genderFail();			//  keeps looping till it detects male or female. ex. "i am a male". 
+//			System.out.println();				// doesn't tell you whats wrong when u put something random though
+			genderChoice();	
+//			break;
+			}
+		
+		bestFriendName = in.next();
 		TyperIntro.selectFriendName();
 		Timer.oneSecond();
 		System.out.println();
@@ -95,12 +137,12 @@ public class Introduction {
 		
 		if(gender == 1) {
 			TyperIntro.maleEnd();
-			chapterOne.Main();
+			ChapterOne.Main();
 		}
 		
 		if(gender == 2) {
 			TyperIntro.femaleEnd();
-			chapterOne.Main();
+			ChapterOne.Main();
 
 		}
 		
@@ -111,7 +153,6 @@ public class Introduction {
 		
 		
 		
-		//calling method from another class placeholder
 		
 }
 

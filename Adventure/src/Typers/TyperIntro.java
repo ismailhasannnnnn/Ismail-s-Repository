@@ -1,3 +1,6 @@
+package Typers;
+import Chapters.Introduction;
+import Util.Timer;
 
 public class TyperIntro {
 	
@@ -24,6 +27,17 @@ public class TyperIntro {
 				Timer.TyperTime();
 				
 		}
+		}
+		
+		public static void questionTwo() {
+			dlog = "What about your best friend? Are they male or female?";
+			Timer.oneSecond();
+			for(int i = 0; i < dlog.length(); i++) {
+				char c = dlog.charAt(i);
+				System.out.print(c);
+				Timer.TyperTime();
+			}
+			System.out.println();
 		}
 		
 		public static void selectMale()   {

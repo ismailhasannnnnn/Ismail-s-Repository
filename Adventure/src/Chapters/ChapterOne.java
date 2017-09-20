@@ -1,10 +1,19 @@
+package Chapters;
+import java.io.Serializable;
 
-public class chapterOne {				//replaced story.java
+import Typers.TyperOne;
+import Util.Timer;
+
+public class ChapterOne implements Serializable {				//replaced story.java
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5266732128802129400L;
 	public static int energy;
 	public static int sleepiness = 8;
 	public static int knowledge1;
-	public chapterOne() {
+	public ChapterOne() {
 	}
 	
 	public static void Main() {													// part one 
@@ -168,7 +177,7 @@ public class chapterOne {				//replaced story.java
 			
 		}
 		
-		System.out.println("END OF CHAPTER 1:");
+		System.out.println("\nEND OF CHAPTER 1:");
 	}
 		
 	}
