@@ -48,10 +48,10 @@ public class ChapterZero {
 
 		
 		default:
-//			TyperIntro.genderFail();			//  keeps looping till it detects male or female. ex. "i am a male". 
-//			System.out.println();				// doesn't tell you whats wrong when u put something random though
+			TyperIntro.genderFail();			//  keeps looping till it detects male or female. ex. "i am a male". 
+			System.out.println();				// doesn't tell you whats wrong when u put something random though
 			genderChoice();	
-//			break;
+			break;
 			}
 		
 			
@@ -66,7 +66,7 @@ public class ChapterZero {
 		in.nextLine();
 		name = in.nextLine();
 		TyperIntro.selectName();
-		Timer.oneSecond();
+		Timer.TyperTime();
 		System.out.println();
 		bestFriendChoice();
 		
@@ -111,8 +111,8 @@ public class ChapterZero {
 		default:
 //			TyperIntro.genderFail();			//  keeps looping till it detects male or female. ex. "i am a male". 
 //			System.out.println();				// doesn't tell you whats wrong when u put something random though
-			genderChoice();	
-//			break;
+			bestFriendChoice();	
+			break;
 			}
 		
 		bestFriendName = in.next();

@@ -1,15 +1,10 @@
 package Chapters;
-import java.io.Serializable;
 
 import Typers.TyperOne;
 import Util.Timer;
 
-public class ChapterOne implements Serializable {				//replaced story.java
+public class ChapterOne {				//replaced story.java
 	
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = -5266732128802129400L;
 	public static int energy;
 	public static int sleepiness = 8;
 	public static int knowledge1;
@@ -57,7 +52,8 @@ public class ChapterOne implements Serializable {				//replaced story.java
 			break;
 		
 		default:
-			decision1();	
+			decision1();
+			break;
 		}
 	}
 	

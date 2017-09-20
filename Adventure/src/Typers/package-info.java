@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * @author xplos
- *
- */
-package Typers;

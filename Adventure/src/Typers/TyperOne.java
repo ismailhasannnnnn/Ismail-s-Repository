@@ -75,7 +75,7 @@ public class TyperOne {
 		}
 		}
 		public static void Late() {
-			dlog = "Mom: " +ChapterZero.name + ", make sure to get home by 6, [Justin: Something the MC looks forward to when he gets home.]          \nDad: Pay attention in History class while you're there!\n";
+			dlog = "Mom: " +ChapterZero.name + ", make sure to get home by 6, we're gonna be ordering pizza!          \nDad: Pay attention in History class while you're there!\n";
 			for(int i = 0; i < dlog.length(); i++ ) {
 				char c = dlog.charAt(i);
 				System.out.print(c);
@@ -91,7 +91,7 @@ public class TyperOne {
 		}
 }
 		public static void bestFriend2() {
-			dlog = "["+ChapterZero.bestFriendName+"]: Also, did u hear about North Korea? Wer gonna die loll xD.";
+			dlog = "["+ChapterZero.bestFriendName+"]: Also, did u hear about North Korea? Seems really fuckin stupid.";
 			for(int i = 0; i < dlog.length(); i++ ) {
 				char c = dlog.charAt(i);
 				System.out.print(c);
