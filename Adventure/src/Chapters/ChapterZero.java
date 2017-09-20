@@ -4,7 +4,7 @@ import java.util.Scanner;
 import Typers.TyperIntro;
 import Util.Timer;
 
-public class Introduction {
+public class ChapterZero {
 	
 	public static Scanner in = new Scanner(System.in);
 	public static String name;
@@ -21,7 +21,7 @@ public class Introduction {
 		System.out.println();
 		TyperIntro.question();
 		System.out.println();
-		Introduction.genderChoice();
+		ChapterZero.genderChoice();
 		}
 	
 	

@@ -1,6 +1,6 @@
 package Typers;
 import Chapters.ChapterOne;
-import Chapters.Introduction;
+import Chapters.ChapterZero;
 import Util.Timer;
 
 public class TyperOne {  				
@@ -10,7 +10,7 @@ public class TyperOne {
 	}
 	
 		public static void wakeUp() {
-			dlog = "???: These violent delights have violent ends, " +Introduction.name + ".\n" ;
+			dlog = "???: These violent delights have violent ends, " +ChapterZero.name + ".\n" ;
 			for(int i = 0; i < dlog.length(); i++ ) {
 				char c = dlog.charAt(i);
 				System.out.print(c);
@@ -43,7 +43,7 @@ public class TyperOne {
 			}
 		
 		public static void MomDad1() {
-			dlog = "Mom: You're not gonna eat breakfast?         \nDad: C'mon, you're already late for your classes anyway, " +Introduction.name + ".\n";
+			dlog = "Mom: You're not gonna eat breakfast?         \nDad: C'mon, you're already late for your classes anyway, " +ChapterZero.name + ".\n";
 			for(int i = 0; i < dlog.length(); i++ ) {
 				char c = dlog.charAt(i);
 				System.out.print(c);
@@ -75,7 +75,7 @@ public class TyperOne {
 		}
 		}
 		public static void Late() {
-			dlog = "Mom: " +Introduction.name + ", make sure to get home by 6, [Justin: Something the MC looks forward to when he gets home.]          \nDad: Pay attention in History class while you're there!\n";
+			dlog = "Mom: " +ChapterZero.name + ", make sure to get home by 6, [Justin: Something the MC looks forward to when he gets home.]          \nDad: Pay attention in History class while you're there!\n";
 			for(int i = 0; i < dlog.length(); i++ ) {
 				char c = dlog.charAt(i);
 				System.out.print(c);
@@ -83,7 +83,7 @@ public class TyperOne {
 		}
 		}
 		public static void bestFriend1() {
-			dlog = "["+Introduction.bestFriendName+"]: Yo. We're chilling at MoonBucks after school yea?\n";
+			dlog = "["+ChapterZero.bestFriendName+"]: Yo. We're chilling at MoonBucks after school yea?\n";
 			for(int i = 0; i < dlog.length(); i++ ) {
 				char c = dlog.charAt(i);
 				System.out.print(c);
@@ -91,7 +91,7 @@ public class TyperOne {
 		}
 }
 		public static void bestFriend2() {
-			dlog = "["+Introduction.bestFriendName+"]: Also, did u hear about North Korea? Wer gonna die loll xD.";
+			dlog = "["+ChapterZero.bestFriendName+"]: Also, did u hear about North Korea? Wer gonna die loll xD.";
 			for(int i = 0; i < dlog.length(); i++ ) {
 				char c = dlog.charAt(i);
 				System.out.print(c);

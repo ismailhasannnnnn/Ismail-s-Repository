@@ -40,7 +40,7 @@ public class ChapterOne implements Serializable {				//replaced story.java
 		System.out.println("What do you do? \n----------------------\n(1) Go back to sleep, you're probably still dreaming \n(2) Go downstairs\n---------------------- ");
 		
 		
-		switch(Introduction.in.nextLine()) {
+		switch(ChapterZero.in.nextLine()) {
 		
 		case "1":
 			System.out.println("You drift slowly back to sleep, only to hear the same eerie voice when you wake up 8 hours later");
@@ -69,13 +69,13 @@ public class ChapterOne implements Serializable {				//replaced story.java
 		System.out.println("As you walk downstairs, you hear the familiar sounds of utensils clashing with plates. You greet Mom and dad, who are eating breakfast.");
 		Timer.oneHalfSecond();
 		
-		if(Introduction.gender == 1 && sleepiness == 8) {
+		if(ChapterZero.gender == 1 && sleepiness == 8) {
 			TyperOne.Mom1Male();
 			Timer.oneSecond();
 			decision3();
 			
 		}
-		if(Introduction.gender == 2 && sleepiness == 8) {
+		if(ChapterZero.gender == 2 && sleepiness == 8) {
 			TyperOne.Mom1Female();
 			Timer.oneSecond();
 			decision3();
@@ -89,7 +89,7 @@ public class ChapterOne implements Serializable {				//replaced story.java
 		System.out.println("\n----------------------\n(1) Eat some breakfast \n(2) Skip breakfast and leave. You're late for school.\n----------------------\n");
 		
 		
-		switch(Introduction.in.nextLine()) {
+		switch(ChapterZero.in.nextLine()) {
 		
 		case "1":
 			
@@ -126,7 +126,7 @@ public class ChapterOne implements Serializable {				//replaced story.java
 	public static void decision5() {
 		System.out.println("\n----------------------\n(1) 'Mutually Assured Destruction?'\n(2) ' They said something about the Sovereignty? What's that?' \n(3) 'Crap, I'm late for school. See you later'\n----------------------\n");
 		
-		switch(Introduction.in.nextLine()) {
+		switch(ChapterZero.in.nextLine()) {
 		case "1":
 			knowledge1 = 0;
 			TyperOne.Mad();
@@ -156,7 +156,7 @@ public class ChapterOne implements Serializable {				//replaced story.java
 	public static void end() {
 		
 		if (knowledge1 == 1){
-			System.out.println("As you leave your house, you get a text from your friend, " +Introduction.bestFriendName);
+			System.out.println("As you leave your house, you get a text from your friend, " +ChapterZero.bestFriendName);
 			Timer.oneSecond();
 			TyperOne.bestFriend1();
 			Timer.oneSecond();
@@ -165,7 +165,7 @@ public class ChapterOne implements Serializable {				//replaced story.java
 			
 		}
 		if (knowledge1 == 0) {
-			System.out.println("As you leave your house, you get a text from your friend, " +Introduction.bestFriendName );
+			System.out.println("As you leave your house, you get a text from your friend, " +ChapterZero.bestFriendName );
 			Timer.oneSecond();
 			TyperOne.bestFriend1();
 			Timer.oneHalfSecond();

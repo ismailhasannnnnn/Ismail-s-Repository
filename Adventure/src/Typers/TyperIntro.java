@@ -1,5 +1,5 @@
 package Typers;
-import Chapters.Introduction;
+import Chapters.ChapterZero;
 import Util.Timer;
 
 public class TyperIntro {
@@ -75,7 +75,7 @@ public class TyperIntro {
 		}
 		}
 		public static void selectName() {
-			dlog = "I see, your name is " + Introduction.name + ". How fitting!" ;
+			dlog = "I see, your name is " + ChapterZero.name + ". How fitting!" ;
 			for(int i = 0; i < dlog.length(); i++ ) {
 				char c = dlog.charAt(i);
 				System.out.print(c);
@@ -83,7 +83,7 @@ public class TyperIntro {
 		}	
 		}
 		public static void theEnd() {
-			dlog = "Listen, " + Introduction.name + ", it's getting dark. We should probably get going.";
+			dlog = "Listen, " + ChapterZero.name + ", it's getting dark. We should probably get going.";
 			for(int i = 0; i < dlog.length(); i++ ) {
 				char c = dlog.charAt(i);
 				System.out.print(c);
@@ -91,7 +91,7 @@ public class TyperIntro {
 		}
 		}
 		public static void theEnd2() {
-			dlog = "\nFrom then on, nobody knew how incredibly gifted " + Introduction.name + " was.";
+			dlog = "\nFrom then on, nobody knew how incredibly gifted " + ChapterZero.name + " was.";
 			for(int i = 0; i < dlog.length(); i++ ) {
 				char c = dlog.charAt(i);
 				System.out.print(c);
@@ -132,7 +132,7 @@ public class TyperIntro {
 }
 }
 			public static void selectFriendName() {
-				dlog = Introduction.bestFriendName + "? A very beautiful name, indeed.";
+				dlog = ChapterZero.bestFriendName + "? A very beautiful name, indeed.";
 				for(int i = 0; i < dlog.length(); i++ ) {
 					char c = dlog.charAt(i);
 					System.out.print(c);
