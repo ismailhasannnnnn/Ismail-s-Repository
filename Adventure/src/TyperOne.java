@@ -110,4 +110,14 @@ public class TyperOne {
 				Timer.TyperTime();
 }
 		}
+		public static void Continue()
+		 { 
+		        System.out.print("");
+		        try
+		        {
+		            System.in.read();
+		        }  
+		        catch(Exception e)
+		        {}  
+		 }
 }

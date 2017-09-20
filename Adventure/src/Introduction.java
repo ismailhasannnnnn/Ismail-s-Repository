@@ -14,7 +14,8 @@ public class Introduction {
 	public static void main(String[] args) throws InterruptedException {
 
 		TyperIntro.intro();
-		System.out.println();
+		TyperOne.Continue();
+		
 		TyperIntro.question();
 		System.out.println();
 		Introduction.genderChoice();
